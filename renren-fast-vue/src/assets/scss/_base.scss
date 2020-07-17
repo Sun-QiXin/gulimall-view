@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.15;
   color: #303133;
   background-color: #fff;
+}
+body .el-table th.gutter {
+  display: table-cell !important;
 }
 a {
   color: mix(#fff, $--color-primary, 20%);
@@ -23,7 +27,6 @@ img {
   vertical-align: middle;
 }
 
-
 /* Utils
 ------------------------------ */
 .clearfix:before,
@@ -35,18 +38,16 @@ img {
   clear: both;
 }
 
-
 /* Animation
 ------------------------------ */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
 }
-
 
 /* Reset element-ui
 ------------------------------ */
@@ -57,14 +58,12 @@ img {
   }
 }
 
-
 /* Layout
 ------------------------------ */
 .site-wrapper {
   position: relative;
   min-width: 1180px;
 }
-
 
 /* Sidebar fold
 ------------------------------ */
@@ -110,9 +109,9 @@ img {
 .site-sidebar__menu-icon,
 .site-content__wrapper,
 .site-content--tabs > .el-tabs .el-tabs__header {
-  transition: inline-block .3s, left .3s, width .3s, margin-left .3s, font-size .3s;
+  transition: inline-block 0.3s, left 0.3s, width 0.3s, margin-left 0.3s,
+    font-size 0.3s;
 }
-
 
 /* Navbar
 ------------------------------ */
@@ -123,7 +122,7 @@ img {
   left: 0;
   z-index: 1030;
   height: 50px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   background-color: $navbar--background-color;
 
   &--inverse {
@@ -244,7 +243,6 @@ img {
   }
 }
 
-
 /* Sidebar
 ------------------------------ */
 .site-sidebar {
@@ -302,7 +300,6 @@ img {
   }
 }
 
-
 /* Content
 ------------------------------ */
 .site-content {
@@ -327,7 +324,7 @@ img {
       right: 0;
       z-index: 930;
       padding: 0 55px 0 15px;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
       background-color: #fff;
       > .el-tabs__nav-wrap {
         margin-bottom: 0;
