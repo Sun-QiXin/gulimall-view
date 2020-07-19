@@ -9,12 +9,13 @@
       :rules="dataRule"
       ref="dataForm"
       @keyup.enter.native="dataFormSubmit()"
-      label-width="120px"
+      label-width="140px"
     >
       <el-form-item label="品牌名" prop="name">
         <el-input v-model="dataForm.name" placeholder="品牌名"></el-input>
       </el-form-item>
       <el-form-item label="品牌logo地址" prop="logo">
+        <!-- <el-input v-model="dataForm.logo" placeholder="品牌logo地址"></el-input> -->
         <single-upload v-model="dataForm.logo"></single-upload>
       </el-form-item>
       <el-form-item label="介绍" prop="descript">
@@ -27,8 +28,7 @@
           inactive-color="#ff4949"
           :active-value="1"
           :inactive-value="0"
-        >
-        </el-switch>
+        ></el-switch>
       </el-form-item>
       <el-form-item label="检索首字母" prop="firstLetter">
         <el-input
@@ -48,11 +48,9 @@
 </template>
 
 <script>
-import singleUpload from "@/components/upload/singleUpload";
+import SingleUpload from "@/components/upload/singleUpload";
 export default {
-  components: {
-    singleUpload
-  },
+  components: { SingleUpload },
   data() {
     return {
       visible: false,
