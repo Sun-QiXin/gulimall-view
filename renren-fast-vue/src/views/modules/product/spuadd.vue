@@ -60,11 +60,11 @@
                 >
               </el-input-number>
             </el-form-item>
-            <el-form-item label="商品介绍" prop="decript">
+            <el-form-item label="商品介绍">
               <multi-upload v-model="spu.decript"></multi-upload>
             </el-form-item>
 
-            <el-form-item label="商品图集" prop="images">
+            <el-form-item label="商品图集">
               <multi-upload v-model="spu.images"></multi-upload>
             </el-form-item>
             <el-form-item>
